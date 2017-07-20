@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url("images/background-pattern.jpg");
+  background-color: #fff;
+}
+.menu {
+  /*border: 2px solid #D62C27;*/
+  background-color:#fff;
+  text-align:center;
+  width:30%;
+  margin: 0 auto 0 auto;
+  height:400px;
+  position:relative;
+  top:20px;
+  min-width:300px;
+  min-height: 300px;
+
+
+}
+.heading{
+    font-weight: bold;
+    text-align: center;
+    
+    letter-spacing: 1px;
+    margin: 0 0 75px 0;
+    color: #fff;
+    border-bottom: 5px solid #D62C27;
+
+    background-color: #F38021;
+    padding:30px;
+
+}
+.menuLink{
+  text-align:center;
+  background-color:#F38021;
+  padding:2% 20% 2% 20%;
+  cursor:pointer;
+  color:white;
+  color: #fff;
+  overflow:auto;
+  text-overflow: ellipsis;
+  margin-top: 10%;
+  border-radius: 10px;
+  position: relative;
+  top: 0px;
+  transition: all ease 0.2s;
+
+}
+.menuLink:hover{
+  color:white;
+  text-decoration: none;
+  font-size: 16px;
+   box-shadow:  0px 5px 4px #666;
+}
+.menuLink:active{
+    color:white;
+    font-size: 16px;
+
+    box-shadow: 0 3px 4px #00823F;
+    top: 3px;
+
+}
+.item{
+  /*min-width: 140px;
+  max-width: 550px;
+  min-height: 130px;
+  max-height: 260px;*/
+  float:left;
+  position: relative;
+
+}
+.image{
+  width:140px;
+  height:140px;
+
+}
+.partsList{
+    width:40%;
+    float:left;
+    position: absolute;
+    z-index: 2;
+}
+
+.partItem{
+
+  text-align: center;
+}
+
+.autoZoneOrange{
+    color:#F38021;
+}
+
+.resetButton{
+  float:right;
+  position: absolute;
+  z-index: 2;
+  right:10%;
+  top:1%;
+}
+.car{
+
+}
+
+
+@media (max-width:1100px) {
+    .item{
+
+      overflow: hidden;
+    }
+    .image {
+      width:120px;
+      height: 120px;
+    }
+  }
+@media (max-width:768px) {
+    .item{
+      width:140px;
+      overflow: hidden;
+
+
+    }
+    .image {
+      width:100px;
+      height: 100px;
+    }
+  }
