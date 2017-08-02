@@ -6,7 +6,6 @@ body {
   background-color: #fff;
 }
 .menu {
-  /*border: 2px solid #D62C27;*/
   background-color:#fff;
   text-align:center;
   width:30%;
@@ -22,12 +21,10 @@ body {
 .heading{
     font-weight: bold;
     text-align: center;
-    
     letter-spacing: 1px;
     margin: 0 0 75px 0;
     color: #fff;
     border-bottom: 5px solid #D62C27;
-
     background-color: #F38021;
     padding:30px;
 
@@ -63,10 +60,6 @@ body {
 
 }
 .item{
-  /*min-width: 140px;
-  max-width: 550px;
-  min-height: 130px;
-  max-height: 260px;*/
   float:left;
   position: relative;
 
@@ -116,13 +109,17 @@ body {
   }
 @media (max-width:768px) {
     .item{
-      width:140px;
+      width:120px;
       overflow: hidden;
 
 
     }
     .image {
-      width:100px;
-      height: 100px;
+      width:80px;
+      height: 80px;
+    }
+    .reset{
+      width:90%;
+      font-size: 80%;
     }
   }

@@ -5,15 +5,11 @@ import './App.css';
 import Menu from './Menu'
 import ItemList from './Items'
 import PartsList from './PartsMenu'
-import CarTest from './CarAppTest'
+
 import ResetButton from './Reset';
 import React3 from 'react-three-renderer';
 import defaultObj from './models/truck.obj';
 import defaultMtl from './models/truck.mtl';
-import block2Obj from './models/block2.obj';
-import block2Mtl from './models/block2.mtl';
-import seat1Obj from './models/seat1.obj';
-import seat1Mtl from './models/seat1.mtl';
 import MTLLoader from './loaders/MTLLoader';
 
 
@@ -59,9 +55,8 @@ class CarUI extends Component {
       const {catalog} = this.state;
         return(
           <div>
-          <PartsList handleClick={this.handleClick} />
+            <PartsList handleClick={this.handleClick} />
             <ItemList catalog={catalog} changeMtl={this.props.changeMtl}/>
-
           </div>
         );
     }
@@ -77,18 +72,13 @@ function onError(xhr){
 }
 
 
-
-
 class CarDemoApp extends Component{
   constructor(props){
     super(props)
     this.state = { carMtl: '' ,
                   carModel: '',
                   objFile: ''};
-
   }
-
-
   loader= (mtl, carObj) => {
   const mtlLoader = new THREE.MTLLoader();
   //mtlLoader.setBaseUrl('');
@@ -128,15 +118,12 @@ class CarDemoApp extends Component{
     }
   };
   render(){
-    const {color} = this.state;
+    const {carModel} = this.state;
       return(
         <div>
           <CarUI changeMtl={this.changeMtl}/>
           <ResetButton changeMtl={this.changeMtl}/>
-
-          <Car color= {color} loadedObject={this.state.carModel}/>
-
-
+          <Car loadedObject={carModel}/>
         </div>
       );
   }

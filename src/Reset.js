@@ -7,7 +7,7 @@ const ResetButton =  (props) => {
   return(
     <div className=''>
       <div className='resetButton'>
-        <button onClick={()=> props.changeMtl(defaultMtl, defaultObj)} type="button" className="well btn btn-default btn-sm item">
+        <button onClick={()=> props.changeMtl(defaultMtl, defaultObj)} type="button" className="well btn btn-default btn-sm reset">
           RESET
         </button>
       </div>

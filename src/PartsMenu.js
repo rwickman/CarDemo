@@ -11,6 +11,8 @@ import dashboardCover2 from './images/DashDesignsBrushedSuede.jpg'
 import dashboardCover3 from './images/DashmatcCarpet.jpg'
 import seat1Mtl from './models/seat1.mtl';
 import seat1Obj from './models/seat1.obj';
+import seat2Obj from './models/seat2.obj';
+import seat2Mtl from './models/seat2.mtl';
 
 function clicked() {
   console.log('Clicked');
@@ -19,7 +21,8 @@ const Part = (props) => {
   return(
     <div className=''>
       <div className ='col-sm-4 list-group'>
-        <a onClick={()=>props.handleClick(carSeats)} href='#' className="list-group-item">Car Seat</a>
+        <h4 className='list-group-item autoZoneOrange'>Parts Menu</h4>
+        <a onClick={()=>props.handleClick(carSeats)} href='#' className="list-group-item">Car Covers</a>
 
         <a onClick= {()=>props.handleClick(floorMats)}href='#' className="list-group-item">Floor Mats</a>
 
@@ -33,6 +36,7 @@ const Part = (props) => {
 const PartsList =(props) => {
     return(
       <div className ='container partsList'>
+
         <Part handleClick={props.handleClick}/>
       </div>
           );
@@ -49,8 +53,8 @@ let carSeats = [
   {
     image:seat2,
     name: 'Plasticolor',
-    mtl: '',
-    obj: ''
+    mtl: seat2Mtl,
+    obj: seat2Obj
   },
   {
     image:seat3,
